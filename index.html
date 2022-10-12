@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jogodavelha.css" />
+    <title>Jogo Da velha</title>
+  </head>
+
+  <body>
+    <header>
+      <a class="logo" href="logo.png">
+        <img src="../Assets/logo.png" alt=""
+      /></a>
+      <nav class="menu">
+        <a class="menu-text" href="">Projetos</a>
+        <button class="menu-text" id="clicaae">Informações</button>
+      </nav>
+    </header>
+    <div id="tamanho">
+      <div class="popup-wrapper">
+        <div class="popup">
+          <div class="popup-close">X</div>
+          <div class="popup-content">
+            Nesse projeto eu estava estudando JavaScript há cerca de 2 meses e
+            meio. Aprendi o basico de manipulação de arrays e programação
+            orientada a objeto. Confesso que tive muito trabalho e cometi erros
+            bobos nesse projeto, mas com esses erros ganhei experiencia e
+            aprendi a pesquisar melhor o que eu precisava.
+          </div>
+        </div>
+      </div>
+      <section id="game"></section>
+      <button id="restart" onclick="jogodavelha.restart()">Restart</button>
+    </div>
+
+    <script src="jogodavelha.js"></script>
+    <script src="popup.js"></script>
+    <script>
+      jogodavelha.init(document.querySelector("#game"));
+      jogodavelha.draw();
+    </script>
+  </body>
+</html>
